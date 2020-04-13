@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "PrintResponse.proto";
+import "PrintRequest.proto";
+
+option csharp_namespace = "Generated";
+
+service PrintOperationService {
+	rpc Print(PrintRequest) returns (PrintResponse);
+}
